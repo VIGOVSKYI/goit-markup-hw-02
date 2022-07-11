@@ -5,41 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
 
     <link rel="stylesheet" href="./css/styles.css">
    
-
 </head>
 <body>
     <header>
-    <a href="" class="logo">WebStudio</a>
+    <div class="container-header">
+    <a class="link-logo" href="./index.html"> <p class="logo">Web<span class="studio-header">Studio</span> </p> </a>
     <nav class="site-nav">
-        <ul>
+        <ul class="link-" style="list-style-type:none">
             <li> <a class="link" href="./index.html">Студия</a></li>
             <li> <a class="link" href="./portfolio.html">Портфолио</a></li>
             <li> <a class="link" href="">Контакты</a></li>
         </ul>
     </nav>
-    <ul class="auth-nav">
+    <ul class="auth-nav" style="list-style-type:none">
         <li> <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li> <a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
     </ul>
-        
+        </div>
     </header>
 <main>
-     <section>
+     <section class="order">
+        <div class="container-caption">
         <h1 class="caption">Эффективные решения для вашего бизнеса</h1>
        <button class="btn" type="button">Заказать услугу</button>
-     </section>
+       </div>
+    </section>
 
     <section>
+        <div class="container-advantage">
         <h2 hidden>Наши преимущества</h2>
-        <ul>
+        <ul class="list-advantage" style="list-style-type:none">
             <li> 
             <h3 class="advantage-type">Внимание к деталям</h3>
             <p class="advantage-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -57,11 +61,13 @@
             <p class="advantage-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
         </ul>
+        </div>
     </section>
 
     <section>
+        <div class="container-services">
         <h2 class="services">Чем мы занимаемся</h2>
-        <ul>
+        <ul class="list-services" style="list-style-type:none">
             <li>
                 <img src="./images/box1.jpg" alt="человек печатает за компьютером" width="370">
             </li>
@@ -72,10 +78,12 @@
                 <img src="./images/box3.jpg" alt="изображение палитри на планшете" width="370">
             </li>
         </ul>
+        </div>
     </section>
     <section>
+            <div class="container-team">
         <h2 class="team">Наша команда</h2>
-        <ul>
+        <ul class="list-team" style="list-style-type:none">
             <li>
                 
                 <img src="./images/foto1.jpg" alt="Игорь Демьяненко" width="270">
@@ -99,15 +107,22 @@
                 <p class="team-metier">UI Designer</p>
             </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
-        <a class="logo" href="">WebStudio</a>
+        <div class="container-footer">
+        <a class="link" href="./index.html"><p class="logo">Web<span class="studio-footer">Studio</span></p></a>
+
         <address>
+        <div class="container-address">
             <p class="address">г. Киев, пр-т Леси Украинки, 26</p><br />
             <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a><br />
             <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </div>
         </address>
+        </div>
     </footer>
+    </div>
 </body>
 </html>
