@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
     
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
    
     <link rel="stylesheet" href="./css/styles.css">
@@ -17,29 +18,32 @@
 </head>
 
 <body>
+    
     <header class="page-header">
-        <a href="" class="logo">WebStudio</a>
+        <div class="container">
+        <a class="link" href="./index.html"><p class="logo">Web<span class="studio-header">Studio</span></p></a>
         <nav class="site-nav">
-            <ul>
+            <ul style="list-style-type:none">
                 <li> <a class="link" href="./index.html">Студия</a></li>
                 <li> <a class="link" href="./portfolio.html">Портфолио</a></li>
                 <li> <a class="link" href="">Контакты</a></li>
             </ul>
         </nav>
-        <ul class="auth-nav">
+        <ul class="auth-nav" style="list-style-type:none">
             <li> <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li> <a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-
+        </div>
     </header>
     <main>
         <section>
-            <h1>Portfolio</h1>
-    <nav>
+            <h1 hidden>Portfolio</h1>
 
-    <ul>
+   
+    <nav>
+     <ul class="page-header" style="list-style-type:none">
         <li>
-            <button class="btn-portfolio" type="button">Заказать услугу</button>
+            <button class="btn-portfolio" type="button">Все</button>
         </li>
 
         <li>
@@ -61,7 +65,7 @@
 
     </nav>
     
-    <ul>
+    <ul class="page-header" style="list-style-type:none">
     <li>
         <img src="./images/portfolio/tehnockryk.jpg" alt="Технокряк" width="370">
         <h2 class="portfolio-title">Технокряк</h2>
@@ -116,11 +120,14 @@
     </main>
 
         <footer class="page-footer">
-            <a class="logo" href="">WebStudio</a>
+            <div class="page-header">
+            <a class="link" href="./index.html"><p class="logo">Web<span class="studio-footer">Studio</span></p></a>
             <address>
                 <p class="address">г. Киев, пр-т Леси Украинки, 26</p><br />
                 <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a><br />
                 <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </div>
             </address>
         </footer>
+        </div>
 </body>
